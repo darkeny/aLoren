@@ -18,14 +18,21 @@ let Conta = () => {
             <header>
                 <Navbar theme="light" apperence="full" />
             </header>
-            <div className="container_ajusting">
-                <Background_img apparence="bg_lg" />
+            <div className="row d-flex align-items-center p-3">
+                <div className="col-lg-6">
+                    <div className="satisfy text-center pt-5 mt-5">
+                        Quem Somos nós?
+                        <p>Que papés desempenhamos?</p>
+                    </div>
+                </div>
+                <div className="col-lg-6">
+                    <img className="pt-5 w-100" src="/img/dreamer.png"/>
+                </div>
             </div>
-
             <section className="content-site">
                 <div className="container">
                     <div className="row d-flex align-items-center">
-                        <div className="col-12 text-center py-space mt-4">
+                        <div className="col-12 text-center  mt-4">
                             <span className="text-gradient display-4 fw-bold text-blue-bold">Sistema de contas</span>
                             <h4 className="fw-light text-dark text-center opacity-75">
                                 Utilizamos um sistema de contas para diferencias regalias / recursos que o sistema oferece
@@ -60,7 +67,7 @@ let Conta = () => {
 
                     <div className="row d-flex align-items-center">
                         <div className="col-sm-6">
-                            <img src="/img/HOTELL.png" className="w-100 brd-15"/>
+                            <img src="/img/HOTELL.png" className="w-100 brd-15" />
                         </div>
                         <div className="col-sm-6">
                             <div className="text-center">

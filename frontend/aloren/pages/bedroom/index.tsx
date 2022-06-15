@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Background_img from '../../components/Background_img';
+import styles from '../../styles/Bedroom.module.css'
 import Navbar from '../../components/Navbar';
-import Paralax from '../../components/Paralax';
+
 
 const Bedroom = () =>{
     return(
@@ -12,7 +12,9 @@ const Bedroom = () =>{
         <header>
             <Navbar theme='light' apperence='full' />
         </header>
-
+        <main>
+            <div className={styles.wallpaper}/>
+        </main>
         </>
     )
 }

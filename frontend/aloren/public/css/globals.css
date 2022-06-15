@@ -208,3 +208,15 @@ input[type="email"],
 .p-20{
   padding: 100px !important;
 }
+@font-face {
+  font-family: 'satisfy';
+  src: url(./font/Satisfy-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.satisfy{
+  font-family: 'satisfy';
+  font-size: 50px;
+
+
+}
