@@ -1,2 +1,2 @@
 # aLoren
-Assoca Hotéis a usuários
+Associa Hotéis a usuários
