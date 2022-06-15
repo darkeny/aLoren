@@ -1,8 +1,18 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import Head from 'next/head';
+import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }: AppProps) {
+
+  return (
+    <>
+      <Head>
+        <link rel="stylesheet" href="http://localhost/public/css/bootstrap.min.css" />
+        <script async src="http://localhost/public/js/bootstrap.min.js" />
+        <script async src="http://localhost/public/js/form-validation.js" />
+        <meta name='viewport' content='width=device-width' />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
-
-export default MyApp
+export default App;
