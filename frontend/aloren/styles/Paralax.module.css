@@ -1,0 +1,22 @@
+.board_img_sm {
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/img/pexels-quark-studio-2506990.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 310px;
+}
+
+.board_img_lg {
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/img/pexels-evgenia-basyrova-5029310.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 150px;
+  padding-bottom: 320px;
+}
