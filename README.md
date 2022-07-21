@@ -1,4 +1,5 @@
 # aLoren
+<<<<<<< HEAD
 
                                               Associa Hotéis a usuários
 
@@ -14,3 +15,6 @@
 3 - utilize apenas o diretorio css e js e cole na pasta public ja criada!!!
 
 *************************************************************************************************************
+=======
+Associa Hotéis a usuários
+>>>>>>> 71d4c2d5724330b134160bab4e8d6e8354171fd3
