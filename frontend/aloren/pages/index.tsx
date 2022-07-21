@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                 <div className={styles.welcome}>
                   <div>Bem Vindo!</div>
                   <h5 className='fw-normal'>Restaure as suas energias com o melhor conforto</h5>
-                  <div className="btn btn-sm c-welcome c-white brd-15 p-2 fw-bold"><a className='text-white' href="#">Marcar Hospedagem</a></div>
+                  <div className="btn btn-sm c-welcome c-white brd-15 p-2 fw-bold px-3"><a className='text-white' href={"hospede"}>Reservar Agora</a></div>
                 </div>
               </div>
               <div className="col-lg-8">

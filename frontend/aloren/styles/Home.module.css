@@ -1,17 +1,9 @@
-.page_layout {
-    height: 100%;
-    width: 100%;
-}
-
-
 .welcome {
     color: #011133;
     font-weight: bold !important;
     font-size: 40px;
     text-align: center;
 }
-
-
 
 @media screen and (max-width: 991px) {
     .welcome {
@@ -21,8 +13,5 @@
         position: relative !important;
         padding-top: 150px !important;
         text-align: center !important;
-    } 
-    .page_layout{
-    
-    } 
+    }
 }

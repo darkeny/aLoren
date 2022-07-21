@@ -19,7 +19,7 @@ const states = {
 function Paralax_sm(props: Props): JSX.Element {
     return (
         <>
-            <div className={styles.board_img_sm} />
+            
         </>
     )
 }
@@ -27,7 +27,7 @@ function Paralax_sm(props: Props): JSX.Element {
 function Paralax_lg(props: Props): JSX.Element {
     return (
         <>
-            <div className={styles.board_img_lg} />
+           
         </>
     )
 }

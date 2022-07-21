@@ -24,6 +24,7 @@ function ProfileModal(props: Props): JSX.Element {
         <>
             <Head>
                 <link rel="stylesheet" href="/css/globals.css" />
+               
             </Head>
             <div className={"modal fade"} id={"show-Profile-Modal"} aria-labelledby={"modallabel"} aria-hidden={"true"}>
                 <div className={"modal-dialog modal-dialog-centered"}>
@@ -34,20 +35,20 @@ function ProfileModal(props: Props): JSX.Element {
                             </button>
                         </div>
                         <div className={"modal-body bg-light"}>
-                            <form id="profileForm" action={"#"} method={"post"} className={"needs-validation"} noValidate>
-                                <div className={"container"}>
-                                    <div className={"form-group"}>
+                            <div className={"container"}>
+                                <div className={"form-group"}>
+                                    <form action={"#"} method={"post"} className={"needs-validation"} noValidate>
                                         <div className="row">
                                             <span className="fw-bold h5">Perfil</span>
                                             <div className="col-12">
                                                 <div className="form-floating">
-                                                    <input type="text" name="namePerfil" id="namePerfil" className="form-control hidden-focus" required placeholder="Nome do Perfil" />
+                                                    <input type="text" className="form-control hidden-focus" placeholder="Nome do Perfil" required/>
                                                     <label className="text-muted small" htmlFor="namePerfil">Nome</label>
                                                 </div>
                                             </div>
                                             <div className="col-sm-12">
                                                 <div className={"form-floating"}>
-                                                    <textarea name={"descPerfil"} id={"descPerfil"} className={"mt-3 hidden-focus form-control"} placeholder={"Descrição"}
+                                                    <textarea maxLength={100} name={"descPerfil"} id={"descPerfil"} className={"mt-3 hidden-focus form-control"} placeholder={"Descrição"}
                                                         required></textarea>
                                                     <label htmlFor={"descPerfil"} className={"text-muted small"}>Descrição</label>
                                                 </div>
@@ -74,18 +75,19 @@ function ProfileModal(props: Props): JSX.Element {
                                                 <input type="text" name="linkOrg" id="linkOrg" className="bg-light border-one-line hidden-focus form-control" required />
                                             </div>
                                         </div>
-                                    </div>
-                                    <span className={"text-muted small"}>Coloque uma descrição de voçê para que as pessoas possam saber quem você é e o que faz</span>
+                                        <span className={"text-muted small"}>Coloque uma descrição de voçê para que as pessoas possam saber quem você é e o que faz</span>
+                                        <div className={"modal-footer"}>
+                                            <button type={"submit"} className={"btn btn-primary"}>
+                                                Atualizar
+                                            </button>
+                                            <button type={"button"} className={"btn btn-dark"} data-bs-dismiss={"modal"}>
+                                                Cancelar
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
-                            </form>
-                        </div>
-                        <div className={"modal-footer"}>
-                            <button onClick={() => { document.forms.namedItem("profileForm")?.submit() }} type={"button"} className={"btn btn-primary"}>
-                                Atualizar
-                            </button>
-                            <button type={"button"} className={"btn btn-dark"} data-bs-dismiss={"modal"}>
-                                Cancelar
-                            </button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,12 +119,14 @@ function DeleteModal(props: Props): JSX.Element {
                                 Esta ação <strong>não pode</strong> ser desfeita, isso atualizará permanentemente as informações, as execuções de fluxo de trabalho serão temporariamente suspensas num intervalo de 30 minutos, uma notificação será enviada aos hóspedes cadastrados, após a atualização das informações.
                             </p>
                             <div className="p-2">
-                                <label htmlFor="confirm">Por favor, digite seu nome de usuário para confirmar</label>
-                                <input type="text" name="" id="confirm" className="form-control hidden-focus" />
-                                <div className="pt-1 text-center">
-                                    <button type="submit" className="btn btn-outline-primary btn-sm me-3 px-3">Sim, Compreendo. Atualizar informações!!</button>
-                                    <button type="submit" className="btn btn-sm btn-outline-danger px-3">Resetar</button>
-                                </div>
+                                <form action="#" method="post" className="needs-validation" noValidate>
+                                    <label htmlFor="confirm">Por favor, digite seu nome de usuário para confirmar</label>
+                                    <input type="text" name="" id="confirm" className="form-control hidden-focus" required />
+                                    <div className="pt-1 text-center">
+                                        <button type="submit" className="btn btn-outline-primary btn-sm me-3 px-3">Sim, Compreendo. Atualizar informações!!</button>
+                                        <button type="submit" className="btn btn-sm btn-outline-danger px-3">Resetar</button>
+                                    </div>
+                                </form>
                             </div>
 
                         </div>

@@ -50,7 +50,7 @@ function BigAvatar(props: Props): JSX.Element {
     return (
         <>
             <div className="avatar">
-                <input type="file" id="perfil" onClick={getValue} name="perfil" className="hidden-all" accept=".jpg,.png,.svg" />
+                <input type="file" id="perfil" onClick={getValue} name="perfil" className="hidden-all" accept=".jpg,.svg,.png,.svg" />
 
                 <div><img id="image" /><label htmlFor="perfil"><img className="icon" width="20px" src="/img/emoji-smile.svg" /></label></div>
             </div>

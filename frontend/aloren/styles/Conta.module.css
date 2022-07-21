@@ -2,6 +2,17 @@
 .text-blue-bold{
     color: #0b2848 !important;
 }
+.wallpaper{
+    background-image: url(../public/img/account.jpg);
+    width: 100%;  
+    height: 20vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 250px;
+    padding-bottom: 380px;
+}
 
 .Goodby{
   position: absolute;

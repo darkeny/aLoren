@@ -16,19 +16,16 @@ a {
   box-sizing: border-box;
 }
 
-.container_ajusting{
-  height: 450px;
-  margin: auto;
-  /* background-color: rgba(0,0,0,0.6); */
-}
-
-
 
 .content-center {
   position: absolute !important;
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
+}
+
+@media screen and (max-width: 991px) {
+
 }
 
 .container-login {
@@ -149,7 +146,7 @@ input[type="email"],
   border-radius: 50% !important;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .avatar #image {
     height: 100px !important;
     width: 100px !important;
@@ -184,39 +181,49 @@ input[type="email"],
   border-radius: 9px;
 }
 
-.size-img {
-  height: 300px !important;
-  border-radius: 15px !important;
-}
 
-.content-site {
-  margin-top: 30px;
-  padding-bottom: 200px;
-  padding: 20px;
-}
-.padding-border{
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-}
-
-@media screen and (max-width: 991px){
-  .maneger{
-    margin-top: 35px !important;
-  }
-  
-}
-.p-20{
-  padding: 100px !important;
-}
 @font-face {
   font-family: 'satisfy';
   src: url(./font/Satisfy-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-.satisfy{
+
+.satisfy {
   font-family: 'satisfy';
   font-size: 50px;
+}
 
+.text-bold {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px !important;
+}
 
+.max-width-5 {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px !important;
+}
+
+.center-center {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.fixed-b0 {
+  bottom: 0 !important;
+}
+
+.fixed-t0 {
+  top: 0 !important;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }
