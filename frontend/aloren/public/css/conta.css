@@ -1,0 +1,32 @@
+body{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.py-space {
+    padding-top: 200px !important;
+    padding-bottom: 180px !important;
+}
+
+.pt-space {
+    padding-top: 200px !important;
+}
+
+.pb-space {
+    padding-bottom: 100px !important;
+}
+
+
+.text-blue-bold{
+    color: #0b2848 !important;
+}
+.c-orange{
+    color: #db5031;
+}
+
+.text-gradient-small {
+    font: bold 40px Poppins, sans-serif;
+    font-weight: bold !important;
+    text-transform: unset;
+    color: #1bb1c2 !important;
+
+}

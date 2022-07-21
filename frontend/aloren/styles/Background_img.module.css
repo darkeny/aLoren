@@ -1,0 +1,32 @@
+.board_img_background_lg {
+    background-image: url(../public/img/pexels-thanhhoa-tran-1488327.jpg);
+    width: 100%;  
+    height: 20vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 380px;
+    
+  }
+  @media screen and (max-width: 991px) {
+    .board_img_background_lg {
+      background-position:  -5.5rem ;
+      background-size: cover;
+    }
+}
+
+
+
+  .board_img_background_sm {
+    background-image: url(../public/img/pexels-thanhhoa-tran-1488327.jpg);
+    width: 100%;  
+    height: 20vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-top: 150px;
+    padding-bottom: 320px;
+  }
