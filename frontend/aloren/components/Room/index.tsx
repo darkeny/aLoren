@@ -1,6 +1,17 @@
-import Head from "next/head";
 import Navbar from "../Navbar";
 
+enum RoomsType {
+    SINGLE,
+    DOUBLE,
+    KING_DOUBLE,
+    LUXURY
+}
+type RoomProps = {
+    roomType: RoomsType
+    description: String
+    price: number
+
+}
 const Rooms = () => {
     return (
         <>
@@ -50,7 +61,7 @@ const Rooms = () => {
                                     <span className='me-3'><img className='me-1 pb-1' width="22px" src="/img/ac.png" />Ac</span>
                                 </div>
                                 <div className="py-3 text-center">
-                                    <button className='hidden-border bg-white' type='submit'><a className="btn btn-sm btn-success text-center" href="hospede">Hosperdar-se</a></button>
+                                    <button className='hidden-border bg-white' type='submit'><a className="btn btn-sm btn-success text-center hidden-focus" href="hospede">Hosperdar-se</a></button>
                                 </div>
                             </div>
                         </div>
@@ -61,3 +72,4 @@ const Rooms = () => {
     )
 }
 export default Rooms;
+

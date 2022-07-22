@@ -50,7 +50,7 @@ function ProfileModal(props: Props): JSX.Element {
                                                 <div className={"form-floating"}>
                                                     <textarea maxLength={100} name={"descPerfil"} id={"descPerfil"} className={"mt-3 hidden-focus form-control"} placeholder={"Descrição"}
                                                         required></textarea>
-                                                    <label htmlFor={"descPerfil"} className={"text-muted small"}>Descrição</label>
+                                                    <label htmlFor={"descPerf-il"} className={"text-muted small"}>Descrição</label>
                                                 </div>
                                             </div>
                                             <span className="fw-bold h5 my-3">Organização</span>
@@ -77,10 +77,10 @@ function ProfileModal(props: Props): JSX.Element {
                                         </div>
                                         <span className={"text-muted small"}>Coloque uma descrição de voçê para que as pessoas possam saber quem você é e o que faz</span>
                                         <div className={"modal-footer"}>
-                                            <button type={"submit"} className={"btn btn-primary"}>
+                                            <button type={"submit"} className={"hidden-focus btn-sm btn btn-primary"}>
                                                 Atualizar
                                             </button>
-                                            <button type={"button"} className={"btn btn-dark"} data-bs-dismiss={"modal"}>
+                                            <button type={"button"} className={"hidden-focus btn btn-sm btn-dark"} data-bs-dismiss={"modal"}>
                                                 Cancelar
                                             </button>
                                         </div>
@@ -123,8 +123,8 @@ function DeleteModal(props: Props): JSX.Element {
                                     <label htmlFor="confirm">Por favor, digite seu nome de usuário para confirmar</label>
                                     <input type="text" name="" id="confirm" className="form-control hidden-focus" required />
                                     <div className="pt-1 text-center">
-                                        <button type="submit" className="btn btn-outline-primary btn-sm me-3 px-3">Sim, Compreendo. Atualizar informações!!</button>
-                                        <button type="submit" className="btn btn-sm btn-outline-danger px-3">Resetar</button>
+                                        <button type="submit" className="btn btn-outline-primary btn-sm me-3 px-3 hidden-focus">Sim, Compreendo. Atualizar informações!!</button>
+                                        <button type="submit" className="btn btn-sm btn-outline-danger px-3 hidden-focus">Resetar</button>
                                     </div>
                                 </form>
                             </div>
