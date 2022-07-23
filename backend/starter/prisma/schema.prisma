@@ -32,7 +32,7 @@ model Rooms {
   id          String    @id @default(uuid())
   type        TypeRoom  @unique
   description String    @db.VarChar(500)
-  price       Decimal
+  price       Decimal   
   booking     Booking[]
 }
 
