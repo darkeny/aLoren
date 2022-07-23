@@ -1,15 +1,15 @@
-import { Booking, PrismaClient } from "@prisma/client";
+import { PrismaClient, Rooms } from "@prisma/client";
 
-class BookingController{
+class RoomsController {
     private prisma: PrismaClient;
 
-    constructor(){
+    constructor() {
         this.prisma = new PrismaClient();
     }
 
-    async create(data: Omit<Booking, 'id'>){
+    async create(data: Omit<Rooms, 'id'>) {
         try {
-            return this.prisma.booking.create({
+            return this.prisma.rooms.create({
                 data: {
                     ...data,
                 }
@@ -17,7 +17,6 @@ class BookingController{
         } catch (e) {
             return e;
         }
-
     }
 }
-export default BookingController;
+export default RoomsController;
