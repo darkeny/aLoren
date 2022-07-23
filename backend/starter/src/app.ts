@@ -1,5 +1,5 @@
 import { Role, Sexo, Stamps } from "@prisma/client";
-import UserController from "./controller/UserController";
+import UserController from "./controllers/UserController";
 
 async function main(){
     const userController = new UserController;
