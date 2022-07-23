@@ -7,23 +7,34 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Booking {
+  id          String   @id @default(uuid())
+  room_number Int      @unique
+  startDate   DateTime @db.Timestamp()
+  endDate     DateTime @db.Timestamp()
+  user        User?    @relation(fields: [userId], references: [id])
+  userId      String?
+  rooms       Rooms?   @relation(fields: [roomsId], references: [id])
+  roomsId     String?
+}
+
 model User {
-  id       Int    @id @default(autoincrement())
+  id       String    @id @default(uuid())
   name     String
   sexo     Sexo
-  email    String @unique
-  role     Role   @default(USER)
-  verified Stamps @default(UNVERIFIED)
+  email    String    @unique
+  role     Role      @default(USER)
+  verified Stamps    @default(UNVERIFIED)
+  booking  Booking[]
 }
 
 model Rooms {
-  id          Int      @id @default(autoincrement())
-  type        TypeRoom @unique
-  description String   @db.VarChar(500)
+  id          String    @id @default(uuid())
+  type        TypeRoom  @unique
+  description String    @db.VarChar(500)
   price       Decimal
+  booking     Booking[]
 }
-
-
 
 enum Sexo {
   MALE
