@@ -120,7 +120,7 @@ input[type="email"],
 
 .c-dark {
   color: #212529 !important;
-}
+}g-4 g-lg-4
 
 .c-secondary {
   color: #6c757d !important;
@@ -209,7 +209,6 @@ input[type="email"],
 }
 
 .center-center {
-  display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
@@ -226,4 +225,5 @@ input[type="email"],
 .row {
   margin-right: 0;
   margin-left: 0;
-}
+
+} 

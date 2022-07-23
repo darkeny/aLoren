@@ -1,24 +1,48 @@
-datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
-}
-
 generator client {
   provider = "prisma-client-js"
 }
 
-model Post {
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  Int?
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
-  posts Post[]
+  id       Int    @id @default(autoincrement())
+  name     String
+  sexo     Sexo
+  email    String @unique
+  role     Role   @default(USER)
+  verified Stamps @default(UNVERIFIED)
+}
+
+model Rooms {
+  id          Int      @id @default(autoincrement())
+  type        TypeRoom @unique
+  description String   @db.VarChar(500)
+  price       Decimal
+}
+
+
+
+enum Sexo {
+  MALE
+  FEMALE
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum TypeRoom {
+  SINGLE_ROOM
+  DOUBLE_ROOM
+  KING_DOUBLE_ROOM
+  LUXURY_DOUBLE_ROOM
+}
+
+enum Stamps {
+  VERIFIED
+  UNVERIFIED
 }

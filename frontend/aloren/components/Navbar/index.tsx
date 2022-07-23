@@ -70,7 +70,7 @@ function FullNavbar(props: Props): JSX.Element {
                     <img src={`/img/aervel-logo-${props.theme}.png`} width={"38px"} alt={"Aervel"} />
                 </a>
 
-                <Link href={"/login"}><a type={"button"} href={"/login"} className={"btn btn-primary order-lg-3 btn-login"}>Entrar</a></Link>
+                <Link href={"/login"}><a type={"button"} href={"/login"} className={"btn btn-primary order-lg-3 btn-login hidden-focus"}>Entrar</a></Link>
 
                 <nav className={"collapse navbar-collapse"} id={"navbar"}>
                     <ul className={"navbar-nav"}>
