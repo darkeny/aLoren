@@ -8,21 +8,23 @@ async function main() {
     const userController = new UserController;
     const roomController = new RoomsController;
     const bookingController = new BookingController;
-    /*
-       const user = await userController.create({
+    
+     /*  const user = await userController.create({
             name: "Auneta",
             sexo: Sexo.FEMALE,
             email: "aunetaguambe@gmail.com",
             role: Role.USER,
             verified: Stamps.UNVERIFIED
-        });*/
-    /*
+        });
+        /*
+    
         const room = await roomController.create({
             type: TypeRoom.DOUBLE_ROOM,
             description: "dsd",
             price: new Prisma.Decimal(110),
         });
         */
+       /*
     const booking = await bookingController.create({
         room_number: 1,
         startDate: new Date(),
@@ -30,7 +32,9 @@ async function main() {
         roomsId: "9cbe4050-eab3-4d35-8952-9a804a35304f",
         userId: "3a364b51-2020-4fb3-a5d2-6c93606b6d16",
     });
+    */
+  const users = await userController.update();
 
-    console.log(booking)
+    console.log(users)
 }
 main();

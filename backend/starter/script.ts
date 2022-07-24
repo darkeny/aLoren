@@ -1,5 +1,4 @@
 import { PrismaClient, Role, Sexo, Stamps } from '@prisma/client'
-import { verify } from 'crypto'
 
 const prisma = new PrismaClient()
 
